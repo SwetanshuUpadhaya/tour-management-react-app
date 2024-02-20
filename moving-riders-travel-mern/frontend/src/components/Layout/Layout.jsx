@@ -4,7 +4,7 @@ import Header from '../Header/Header'
 import Router from '../../router/Router'
 import Footer from '../Footer/Footer'
 
-const layout = () => {
+const Layout = () => {
   return (
     <>
       <Header />
@@ -14,4 +14,4 @@ const layout = () => {
   )
 }
 
-export default layout
+export default Layout
