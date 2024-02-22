@@ -30,17 +30,17 @@ const Header = () => {
         document.documentElement.scrollTop > 80
       ) {
         headerRef.current.classList.add("sticky_header");
-      }else{
+      } else {
         headerRef.current.classList.remove("sticky_header");
       }
     });
   };
 
   useEffect(() => {
-    stickyHeaderFunc()
+    stickyHeaderFunc();
 
-    return window.removeEventListener('scroll', stickyHeaderFunc)
-  })
+    return window.removeEventListener("scroll", stickyHeaderFunc);
+  });
 
   return (
     <header className="header" ref={headerRef}>
