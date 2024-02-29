@@ -59,7 +59,7 @@
   border: 1px solid rgb(229, 231, 235);
 }
 
-.booking_bottom li{
+.booking_bottom li {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,11 +72,12 @@
   font-weight: 500;
 }
 
-.booking_bottom{
+.booking_bottom {
   margin-top: 1rem;
 }
 
-.total h5, .total span{
+.total h5,
+.total span {
   color: var(--heading-color) !important;
   font-weight: 700 !important;
   font-size: 1.1rem !important;

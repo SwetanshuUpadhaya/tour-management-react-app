@@ -1,18 +1,16 @@
-
-
-.service_item{
+.service_item {
   padding: 1rem;
-  border-bottom: 1px solid var(--primary-color);
-  border-right: 1px solid var(--primary-color);
-  border-radius: .5rem;
+  border-bottom: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+  border-radius: 0.5rem;
   transition: 0.5s;
 }
 
-.service_item:hover{
+.service_item:hover {
   transform: scale(1.05);
 }
 
-.service_img{
+.service_img {
   width: 50px;
   height: 50px;
   display: flex;
@@ -25,16 +23,16 @@
   line-height: 50px;
 }
 
-.service_img img{
+.service_img img {
   width: 100%;
 }
 
-.service_item h5{
+.service_item h5 {
   font-style: 1.1rem;
   font-weight: 500;
 }
 
-.service_item p{
-  font-size: .9rem;
+.service_item p {
+  font-size: 0.9rem;
   color: var(--text-color);
 }

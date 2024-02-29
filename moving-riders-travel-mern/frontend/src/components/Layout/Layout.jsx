@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
-import Header from '../Header/Header'
-import Router from '../../router/Router'
-import Footer from '../Footer/Footer'
+import Header from "../Header/Header";
+import Router from "../../router/Router";
+import Footer from "../Footer/Footer";
 
 const Layout = () => {
   return (
@@ -10,8 +10,8 @@ const Layout = () => {
       <Header />
       <Router />
       <Footer />
-    </>   
-  )
-}
+    </>
+  );
+};
 
-export default Layout
+export default Layout;

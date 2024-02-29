@@ -9,13 +9,13 @@ export const createTour = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: "Successfully created",
+      message: "Tour successfully created",
       data: savedTour,
     });
   } catch (err) {
     res
       .status(500)
-      .json({ success: false, message: "Failed to create. Try again" });
+      .json({ success: false, message: "Failed to create tour. Try again" });
   }
 };
 
@@ -34,13 +34,13 @@ export const updateTour = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: "Successfully updated",
+      message: "Tour successfully updated",
       data: updatedTour,
     });
   } catch (err) {
     res.status(500).json({
       success: false,
-      message: "Failed to update",
+      message: "Failed to update tour",
     });
   }
 };
@@ -54,13 +54,13 @@ export const deleteTour = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: "Successfully deleted",
+      message: "Tour successfully deleted",
       data: deletedTour,
     });
   } catch (err) {
     res.status(500).json({
       success: false,
-      message: "Failed to delete",
+      message: "Failed to delete delete",
     });
   }
 };
@@ -74,14 +74,14 @@ export const getSingleTour = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: "Successful",
+      message: "Successfully found tour",
       data: tour,
     });
   } catch (err) {
     res.status(404).json({
       success: false,
-      message: "Not Found",
-    });
+      message: "Tour not Found",
+    })
   }
 };
 
@@ -99,13 +99,13 @@ export const getAllTour = async (req, res) => {
     res.status(200).json({
       success: true,
       count: tours.length,
-      message: "Successful",
+      message: "Successfully found all tours",
       data: tours,
     });
   } catch (err) {
     res.status(404).json({
       success: false,
-      message: "Not Found",
+      message: "Tours not found",
     });
   }
 };

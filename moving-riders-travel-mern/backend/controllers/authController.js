@@ -24,7 +24,7 @@ export const register = async (req, res) => {
       message: "Successfully created",
     });
   } catch (error) {
-    res.status(200).json({
+    res.status(500).json({
       success: false,
       message: "Failed to create. Try again",
     });
@@ -72,7 +72,7 @@ export const login = async (req, res) => {
       { expiresIn: "15d" }
     );
 
-    // set token in the browser cookies ad send the response to the client
+    // set token in the browser cookies and send the response to the client
     res
       .cookie("access_token", token, {
         httpOnly: true,
