@@ -4,6 +4,7 @@
 
 .logo img {
   width: 50%;
+  cursor: pointer;
 }
 
 .menu {
@@ -70,8 +71,8 @@
     z-index: 9999;
   }
 
-  .show__menu {
-    display: none;
+  .show_menu {
+    display: block;
   }
 
   .mobile_menu {

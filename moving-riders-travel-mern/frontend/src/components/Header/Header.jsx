@@ -51,18 +51,22 @@ const Header = () => {
     return window.removeEventListener("scroll", stickyHeaderFunc);
   });
 
-  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+  const toggleMenu = () => {
+    menuRef.current.classList.toggle("show_menu");
+  };
 
   return (
     <header className="header" ref={headerRef}>
       <Container>
         <Row>
           <div className="nav_wrapper d-flex align-items-center justify-content-between">
-            {/* {log} */}
+            {/* {logo start */}
             <div className="logo">
-              <img src={logo} alt="" />
+              <a href="/home">
+                <img src={logo} path="/home" alt="logo" />
+              </a>
             </div>
-            {/* {log end} */}
+            {/* {logo end} */}
 
             {/* {menu start} */}
             <div className="navigation" ref={menuRef} onClick={toggleMenu}>
