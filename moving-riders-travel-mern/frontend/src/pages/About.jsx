@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 
 import Newsletter from "./../shared/Newsletter";
 import Subtitle from "../shared/Subtitle";
-import experienceImg from "../assets/images/experience.png";
+import experienceImg from "../assets/images/experience.jpg";
 
 const About = () => {
   return (

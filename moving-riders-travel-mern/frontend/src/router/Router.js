@@ -9,6 +9,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import ThankYou from "../pages/ThankYou";
 import SearchResultList from "../pages/SearchResultList";
+import Contact from "../pages/Contact";
 
 const Router = () => {
   return (
@@ -22,6 +23,7 @@ const Router = () => {
       <Route path="/register" element={<Register />} />
       <Route path="/thank-you" element={<ThankYou />} />
       <Route path="/tours/search" element={<SearchResultList />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 };

@@ -5,8 +5,7 @@ import { Container, Row, Col } from "reactstrap";
 import heroImg from "../assets/images/hero-img01.jpg";
 import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
-import worldImg from "../assets/images/world.png";
-import experienceImg from "../assets/images/experience.png";
+import experienceImg from "../assets/images/experience.jpg";
 
 import Subtitle from "../shared/Subtitle";
 import SearchBar from "../shared/SearchBar";
@@ -26,18 +25,17 @@ const Home = () => {
             <Col lg="6">
               <div className="hero_content">
                 <div className="hero_subtitle d-flex align-items-center ">
-                  <Subtitle subtitle={"Know Before You Go"} />
-                  <img src={worldImg} alt="" />
+                  <Subtitle subtitle={"Ride with Us"} />
                 </div>
                 <h1>
-                  Travelling opens the door to creating{" "}
-                  <span className="highlight">memories</span>
+                  Live, Travel, Adventure, Bless, and don’t be
+                  <span className="highlight"> Sorry</span>
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                  voluptatum necessitatibus voluptas tenetur exercitationem ipsa
-                  amet labore aperiam eos quia eveniet voluptatem eius officia,
-                  numquam, quaerat perferendis hic nulla quis.
+                  We are your traveling companions, your next-door Travel and
+                  Tour Company, your most trusted touring agents, your best
+                  itinerary designers, and the most competent tour planning
+                  consultants, just a call away.
                 </p>
               </div>
             </Col>
@@ -67,7 +65,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="3">
-              <h5 className="services_subtitle">What we serve</h5>
+              <Subtitle subtitle={"What we serve"} />
               <h2 className="services_title">We offer our best services</h2>
             </Col>
             <ServiceList />
@@ -93,7 +91,7 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="6">
+            <Col lg="7">
               <div className="experience_content">
                 <Subtitle subtitle={"Experience"} />
 
@@ -123,7 +121,7 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col lg="6">
+            <Col lg="5">
               <div className="experience_img">
                 <img src={experienceImg} alt="" />
               </div>

@@ -1,10 +1,11 @@
 .header {
   width: 100%;
+  background: #f2fcff;
+  box-shadow: 3px 3px 8px -3px #ddd;
 }
 
 .logo img {
-  width: 50%;
-  cursor: pointer;
+  width: 60%;
 }
 
 .menu {
@@ -13,13 +14,14 @@
 
 .nav_items a {
   text-decoration: none;
-  color: var(--heading-color);
+  color: var(--primary-color);
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .nav_items a:hover {
-  color: inherit;
+  transition: 0.5s;
+  color: var(--secondary-color);
 }
 
 .nav_items a.active_link {
@@ -34,7 +36,7 @@
 
 .sticky_header {
   width: 100%;
-  background: #fff;
+  background: #f2fcff;
   position: sticky;
   top: 0;
   left: 0;
@@ -67,7 +69,7 @@
     flex-direction: column;
     line-height: 0.5rem;
     justify-content: center;
-    background-color: #fff;
+    background: #f2fcff;
     z-index: 9999;
   }
 
@@ -82,7 +84,7 @@
 
 @media only screen and (max-width: 768px) {
   .logo img {
-    width: 45%;
+    width: 40%;
   }
 
   .menu {

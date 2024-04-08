@@ -1,0 +1,58 @@
+.contact-container {
+  padding: 40px 0;
+  background: var(--secondary-color);
+}
+
+.contact-container h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #fff;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.contact-container Button {
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-container Button:hover {
+  background-color: #000000;
+}
+
+@media (max-width: 576px) {
+  .contact-container {
+    padding: 20px 0;
+  }
+
+  .contact-container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}

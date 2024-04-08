@@ -70,7 +70,6 @@ const Footer = () => {
               </div>
             </div>
           </Col>
-
           <Col lg="3">
             <h5 className="footer_links-title">Discover</h5>
 
@@ -94,7 +93,6 @@ const Footer = () => {
             </ListGroup>
           </Col>
           <Col lg="3">
-            {" "}
             <h5 className="footer_links-title">Quick Links</h5>
             <ListGroup className="footer_quick-links">
               <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
@@ -128,8 +126,7 @@ const Footer = () => {
           </Col>
           <Col lg="12" className="text-center pt-5">
             <p className="copyright">
-              Copyright {year}, designed and developed by Swetanshu Upadhaya.
-              All rights reserved
+              Copyright {year}, Swetanshu Upadhaya. All rights reserved
             </p>
           </Col>
         </Row>
