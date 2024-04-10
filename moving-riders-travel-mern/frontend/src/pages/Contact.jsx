@@ -36,8 +36,16 @@ const Contact = () => {
 
   return (
     <Container className="contact-container">
-      <Row>
-        <Col md={6} className="mx-auto">
+      <Row className="m-0 p-0">
+        <Col lg="6" className="contact-map p-0 m-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27023.90328625511!2d75.67060092398708!3d32.15062485469823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b836e24ec0fa3%3A0xed86dbc731acda5!2sMoving%20Riders%20Travel!5e0!3m2!1sen!2sin!4v1712765795425!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </Col>
+        <Col lg="6" className="contact-form p-4 m-0">
           <h2 className="text-center mb-4">Contact Us</h2>
           <Form onSubmit={handleSubmit}>
             <FormGroup>

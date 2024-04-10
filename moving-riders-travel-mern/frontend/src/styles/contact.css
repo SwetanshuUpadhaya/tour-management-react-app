@@ -1,6 +1,16 @@
-.contact-container {
-  padding: 40px 0;
-  background: var(--secondary-color);
+.contact-container Row {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-form {
+  background-color: var(--secondary-color);
+}
+
+.contact-map iframe {
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .contact-container h2 {
@@ -16,6 +26,8 @@
 
 label {
   color: #fff;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 input[type="text"],
@@ -25,7 +37,7 @@ textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 textarea {
@@ -34,16 +46,17 @@ textarea {
 
 .contact-container Button {
   padding: 10px 20px;
-  background: var(--primary-color);
+  background: var(--heading-color);
   color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
+  transition: 0.5s;
 }
 
 .contact-container Button:hover {
-  background-color: #000000;
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 576px) {
