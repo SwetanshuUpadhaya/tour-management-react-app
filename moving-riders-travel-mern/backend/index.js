@@ -17,6 +17,7 @@ const corsOptions = {
   origin: true,
   credentials: true,
 };
+app.use(express.static("dist"));
 
 // database connection
 mongoose.set("strict", false);
